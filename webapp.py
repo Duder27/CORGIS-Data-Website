@@ -23,19 +23,18 @@ app.route("/response")
 def render_response():
 	with open('cars.json') as cars_data:
 		cars = json.load(cars_data)
-	car = request.args['CarSelected']
 	factT = ""
 	factCM = ""
 	factHM = ""
-	factY = ""
+	factHP = ""
 	for data in cars:
 		if car == data["Car"]
-			data["Classification"]["Year"]["City mpg"]["Highway mpg"]
+			data["Classification"]["Horsepower"]["City mpg"]["Highway mpg"]
 			factT = data["Classification"]
 			factCM = data["City mpg"]
 			factHM = data["Highway mpg"]
-			factY = data["Year"]
-	return render_template('response.html', response = factT, response2 = factCM, response3 = factHM, response4 = factY)
+			factHP = data["Horsepower"]
+	return render_template('response.html', response = factT, response2 = factCM, response3 = factHM, response4 = factHP)
 
 
 if __name__=="__main__":
