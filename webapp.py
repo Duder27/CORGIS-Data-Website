@@ -23,6 +23,7 @@ app.route("/response")
 def render_response():
 	with open('cars.json') as cars_data:
 		cars = json.load(cars_data)
+	car = request.args['CarSelected']
 	factT = ""
 	factCM = ""
 	factHM = ""
