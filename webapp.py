@@ -38,5 +38,5 @@ def render_response():
 	return render_template('response.html', response = factT, response2 = factCM, response3 = factHM, response4 = factHP)
 
 
-if __name__=="__main__":
-    app.run(debug=True, port=54321)
+#if __name__=="__main__":
+    #app.run(debug=True, port=54321)
