@@ -29,7 +29,7 @@ def render_response():
 	factHM = ""
 	factHP = ""
 	for data in cars:
-		if car == data["Car"]
+		if car == data["Car"]:
 			data["Classification"]["Horsepower"]["City mpg"]["Highway mpg"]
 			factT = data["Classification"]
 			factCM = data["City mpg"]
