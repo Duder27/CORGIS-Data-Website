@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="{{ filename='style.css')}}">
+  </head>
+  <body>
+  	<form action='/response'>
+  	<label for="cars">Choose a car to get some facts about:</label>
+  	<select name = "CarSelected">
+  		{{ options }}
+  	</select>
+  	<br>
+  	<input type = "submit" id = "check">
+	</form>
+  </body>
+</html>
