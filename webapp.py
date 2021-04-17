@@ -7,8 +7,8 @@ app = Flask(__name__)
 def get_car_options(cars):
 	get_car_options = []
 	for f in cars:
-		if not(f['ID']) in get_car_options:
-			get_car_options.append(f['ID'])
+		if not(f['Identification']) in get_car_options:
+			get_car_options.append(f['Identification'])
 	y = ''
 	for x in get_car_options:
 		y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
