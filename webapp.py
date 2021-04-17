@@ -14,6 +14,7 @@ def get_car_options(cars):
 		y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
 	return y
 
+@app.route("/")
 def render_main():
 	with open('cars.json') as cars_data:
 		cars = json.load(cars_data)
