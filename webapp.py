@@ -9,10 +9,10 @@ def get_car_options(cars):
 	for f in cars:
 		if not(f['Identification']) in get_car_options:
 			get_car_options.append(f['Identification'])
-	y = ''
-	for x in get_car_options:
-		y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
-	return y
+	#y = ''
+	#for x in get_car_options:
+		#y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
+	#return y
 
 @app.route("/")
 def render_main():
