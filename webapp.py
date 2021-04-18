@@ -7,12 +7,12 @@ app = Flask(__name__)
 def get_car_options(cars):
 	get_car_options = []
 	for f in cars:
-		if not(f['Identification']) in get_car_options:
-			get_car_options.append(f['Identification'])
-	#y = ''
-	#for x in get_car_options:
-		#y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
-	#return y
+		if not(f['ID']) in get_car_options:
+			get_car_options.append(f['ID'])
+	y = ''
+	for x in get_car_options:
+		y = y + Markup("<option value=\"" + x + "\">" + x + "</option>")
+	return y
 
 @app.route("/")
 def render_main():
@@ -30,8 +30,8 @@ def render_response():
 	factHM = ""
 	factHP = ""
 	for data in cars:
-		if car == data["Car"]:
-			data["Classification"]["Horsepower"]["City mpg"]["Highway mpg"]
+		if car == data["ID"]:
+			data["Classification"]["Ho'rsepower"]["City mpg"]["Highway mpg"]
 			factT = data["Classification"]
 			factCM = data["City mpg"]
 			factHM = data["Highway mpg"]
