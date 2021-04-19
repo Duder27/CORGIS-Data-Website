@@ -1,7 +1,7 @@
 !DOCTYPE html>
 <html>
   <head>
-  	<link rel="stylesheet" href="{{filename='style.css')}}">
+  	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
   	<h1>This car has a {{response}} transmission.</h1>
