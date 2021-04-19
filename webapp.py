@@ -20,7 +20,7 @@ def render_main():
 		cars = json.load(cars_data)
 	return render_template('home.html', options = get_car_options(cars), car_options = get_car_options(cars))
 
-app.route("/response")
+app.route("/response", methods = ['POST'])
 def render_response():
 	with open('cars.json') as cars_data:
 		cars = json.load(cars_data)
